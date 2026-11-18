@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Dhanush ❤️</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, serif;
+  background: linear-gradient(135deg,#ffd1dc,#fff0f5,#ffb6c1);
+  color: #761c40;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+section {
+  min-height: 100vh;
+  padding: 65px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: clamp(35px,7vw,60px);
+  color: #a00045;
+  margin: 20px;
+}
+
+h2 {
+  color: #b01259;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.9;
+  font-size: 17px;
+}
+
+.heart {
+  font-size: 75px;
+  animation: heartbeat 1.2s infinite;
+}
+
+@keyframes heartbeat {
+  50% { transform: scale(1.2); }
+}
+
+.card {
+  background: rgba(255,255,255,.88);
+  max-width: 650px;
+  width: 100%;
+  padding: 35px 25px;
+  border-radius: 25px;
+  box-shadow: 0 10px 35px #a0004525;
+  margin: 25px 0;
+}
+
+button {
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  background: #c2185b;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  margin: 20px 5px;
+}
+
+button:hover {
+  background: #880e4f;
+}
+
+input {
+  padding: 14px;
+  width: 90%;
+  max-width: 300px;
+  border: 2px solid #e88aaa;
+  border-radius: 20px;
+  outline: none;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+#letter, #final, #passwordBox {
+  display: none;
+  margin-top: 25px;
+  animation: appear 1.5s;
+}
+
+#error {
+  color: #d00040;
+  display: none;
+  margin-top: 12px;
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.floating {
+  position: fixed;
+  bottom: -30px;
+  pointer-events: none;
+  animation: rise 7s linear forwards;
+}
+
+@keyframes rise {
+  to {
+    transform: translateY(-110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+footer {
+  padding: 30px;
+  font-size: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<section>
+  <div class="heart">❤️</div>
+
+  <h1>Happy Men's Day,<br>Dhanush!</h1>
+
+  <p>
+    To the boy who owns my heart<br>
+    and the man who is building his dreams.
+  </p>
+
+  <button onclick="document.getElementById('welcome').scrollIntoView({behavior:'smooth'})">
+    Open Your Surprise 💌
+  </button>
+</section>
+
+<section id="welcome">
+  <div class="card">
+    <h2>Dear Dhanush, My Love ❤️</h2>
+
+    <p>
+      Today is your day, and I want to remind you
+      how special you are to me.
+      <br><br>
+      You are not just a romantic boyfriend.
+      You are a responsible person with a beautiful heart,
+      a determined mind and dreams bigger than the sky.
+      <br><br>
+      I admire the way you balance your college life,
+      your responsibilities and your passion for business.
+      <br><br>
+      I see a hardworking young man who wants to create
+      something of his own, and I hope you never stop
+      believing in yourself.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="card">
+    <h2>To My Future Businessman 💼</h2>
+
+    <p>
+      One day, I hope to see you running your own empire.
+      <br><br>
+      I hope your hard work turns into success,
+      your dreams turn into reality,
+      and every struggle becomes a beautiful story
+      of how far you have come.
+      <br><br>
+      Never give up on your dreams, Dhanush.
+      I believe in the man you are today
+      and the successful man you are becoming.
+      <br><br>
+      Your dreams matter. Your happiness matters.
+      And YOU matter so much to me.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="card">
+    <h2>A Little Love Letter 💌</h2>
+
+    <p>
+      I don't need a perfect man.
+      I just want YOU.
+      <br><br>
+      Your silly moments, your romantic side,
+      your caring heart, your little efforts
+      and even your stubbornness.
+      <br><br>
+      I want to celebrate your victories,
+      encourage you during difficult days,
+      laugh with you over silly things
+      and watch you achieve everything you dream of.
+      <br><br>
+      Thank you for being my favourite person.
+    </p>
+
+    <button onclick="openPassword()">
+      Unlock Your Secret Letter 🔐
+    </button>
+
+    <div id="passwordBox">
+      <h2>Only For You, Dhanush ❤️</h2>
+
+      <p>Enter the secret password to unlock my heart 💗</p>
+
+      <input
+        type="password"
+        id="password"
+        placeholder="Enter your password"
+      >
+
+      <br>
+
+      <button onclick="checkPassword()">
+        Unlock My Love 💌
+      </button>
+
+      <p id="error">Oops! Wrong password. Try again, my love! 💕</p>
+    </div>
+
+    <div id="letter">
+      <h2>MY FAVOURITE MAN ❤️</h2>
+
+      <p>
+        Dhanush, promise me something...
+        Never stop dreaming. Never stop growing.
+        Never lose that beautiful heart of yours.
+        <br><br>
+        I am so proud of you, my love.
+        <br><br>
+        Happy Men's Day, my future millionaire!
+        I LOVE YOU FOREVER! 💋
+      </p>
+
+      <button onclick="showFinal()">One More Surprise ❤️</button>
+    </div>
+
+    <div id="final">
+      <h1>YOU + ME = FOREVER 💍</h1>
+
+      <p>
+        In every chapter of your life,
+        I hope you find reasons to smile.
+        <br><br>
+        With all my love,<br>
+        Your girl ❤️
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Made with infinite love, exclusively for Dhanush 🌹
+  <br>
+  Happy International Men's Day!
+</footer>
+
+<script>
+
+function openPassword() {
+  document.getElementById("passwordBox").style.display = "block";
+}
+
+function checkPassword() {
+
+  const password = document.getElementById("password").value;
+
+  if (password === "thanya") {
+
+    document.getElementById("passwordBox").style.display = "none";
+    document.getElementById("letter").style.display = "block";
+    document.getElementById("error").style.display = "none";
+
+  } else {
+
+    document.getElementById("error").style.display = "block";
+
+  }
+}
+
+function showFinal() {
+  document.getElementById("final").style.display = "block";
+}
+
+function createHeart() {
+
+  const heart = document.createElement("div");
+
+  heart.className = "floating";
+
+  heart.innerHTML = ["❤️","💕","💗","🌹","💖"][
+    Math.floor(Math.random()*5)
+  ];
+
+  heart.style.left = Math.random()*100 + "vw";
+  heart.style.fontSize = (20+Math.random()*25)+"px";
+  heart.style.animationDuration = (4+Math.random()*5)+"s";
+
+  document.body.appendChild(heart);
+
+  setTimeout(() => heart.remove(), 9000);
+}
+
+setInterval(createHeart, 500);
+
+</script>
+
+</body>
+</html>
